@@ -28,6 +28,9 @@ The architecture consists of the following layers:
 * Prometheus collects metrics from clusters
 * Grafana visualizes metrics via dashboards
 
+## Architecture Diagram
+
+![Architecture Diagram](docs/architecture.png)
 ---
 
 ## Technologies Used
