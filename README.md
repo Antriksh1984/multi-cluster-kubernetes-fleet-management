@@ -30,7 +30,7 @@ The architecture consists of the following layers:
 
 ## Architecture Diagram
 
-![Architecture Diagram](docs/architecture.png)
+![Architecture Diagram](docs/architecture2.png)
 ---
 
 ## Technologies Used
