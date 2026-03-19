@@ -21,6 +21,6 @@ spec:
         - name: REDIS
           value: azure-vote-back
         - name: CLUSTER_NAME
-          value: east-us
+          value: aks-cluster-2
         - name: APP_VERSION
           value: v1
