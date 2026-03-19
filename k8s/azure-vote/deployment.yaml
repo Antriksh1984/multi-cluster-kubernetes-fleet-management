@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: azure-vote-front
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: azure-vote-front
+  template:
+    metadata:
+      labels:
+        app: azure-vote-front
+    spec:
+      containers:
+      - name: azure-vote-front
+        image: adler1981.azurecr.io/azure-vote:v1
+        ports:
+        - containerPort: 80
+        env:
+        - name: REDIS
+          value: azure-vote-back
+        - name: CLUSTER_NAME
+          value: aks-cluster-1
+        - name: APP_VERSION
+          value: v1
